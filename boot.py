@@ -59,7 +59,7 @@ ADMIN_IDS: set[int] = {
 
 DOWNLOAD_DIR = Path("downloads")
 DOWNLOAD_DIR.mkdir(exist_ok=True)
-FFMPEG_PATH    = r"C:\Users\IT PARK\AppData\Local\Microsoft\WinGet\Packages\Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe\ffmpeg-8.0.1-full_build\bin"
+FFMPEG_PATH = "ffmpeg"
 TIKTOK_COOKIES = Path("tiktok_cookies.txt")
 
 # ═══════════════════════════════════════════════════════
@@ -1176,5 +1176,6 @@ if __name__ == "__main__":
         asyncio.run(main())
     except KeyboardInterrupt:
         log.info("⛔ To'xtatildi.")
+
 
 # cmd  pip install curl_cffi
